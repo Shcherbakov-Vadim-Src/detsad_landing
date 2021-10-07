@@ -1,0 +1,13 @@
+{
+  "/ContactForm": "pages/ContactForm.html",
+  "/Footer": "pages/Footer.html",
+  "/PartOne": "pages/PartOne.html",
+  "/PartTwo": "pages/PartTwo.html",
+  "/Slider": "pages/Slider.html",
+  "/_app": "pages/_app.js",
+  "/_document": "pages/_document.js",
+  "/api/contact": "pages/api/contact.js",
+  "/": "pages/index.html",
+  "/_error": "pages/_error.js",
+  "/404": "pages/404.html"
+}

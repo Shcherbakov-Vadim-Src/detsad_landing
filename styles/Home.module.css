@@ -1,18 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-.flex_row{
+.flex_row, .info_box{
   display: flex;
   flex-direction: row;
 }
 
-.flex_column, .logoitem{
+.flex_column, .logo_item, .logo_item_mobile{
   display: flex;
   flex-direction: column;
 }
 
-.logoitem{
+.logo_item{
   margin: 20px auto;
+}
+
+.logo_item_mobile{
+  display: none;
 }
 
 .menu_box{
@@ -36,7 +40,7 @@
   color: rgb(108, 145, 6);
 }
 
-.logotitle{
+.logo_title{
   font-family: 'Lobster', cursive;
   text-align: center;
   color: goldenrod;
@@ -175,7 +179,7 @@
   box-shadow: 0 0 9px darkviolet;
 }
 
-.carouselbox{
+.carousel_box{
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -230,4 +234,206 @@
 
 .address:hover{
   color: rgb(108, 145, 6);
+}
+
+.text_color{
+  color: rgb(108, 145, 6);
+}
+
+@media screen and (min-width: 400px) and (max-width: 1024px){
+
+  .logo_item{
+    width: 500px;
+  }
+
+  .logo_title{
+    font-size: 28px;
+  }
+
+  .menu_item {
+    font-size: 17px;
+  }
+
+
+  .info_box{
+    flex-direction: row;
+  }
+
+  .info_img{
+    margin: 0 auto;
+    width: 200px;
+  }
+
+  .text_box {
+    margin: 14px ​0 0 36px;
+  } 
+
+  .submit_div {
+    text-align: center;
+  }
+
+  .inner_text{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .button_to_contact {
+    margin: 20px 0 0 0;
+  }
+
+  .carousel_box{
+    justify-content: center;
+  }
+  
+  .carousel{
+    width: 550px;
+  }
+
+  .someitem{
+    margin: 45px 0 0 90px;
+    text-align: center;
+    width: 350px;
+  }
+
+  .firstitem{
+    margin: 79px 0 0 157px;
+    text-align: center;
+    width: 250px;
+  }
+
+  .fiveitem{
+    margin: 59px 0 0 150px;
+    text-align: center;
+    width: 250px;
+  }
+
+  .text_about {
+    width: 500px;
+    margin: 20px auto;
+  }
+
+  .input_contact{
+    width: 290px;
+  }
+
+  .adress_row {
+    flex-direction: row;
+  }
+
+  .city, .years, .address {
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .contacts_block {
+    padding: 17px 0 0;
+  }
+
+}
+
+
+@media screen and (min-width: 100px) and (max-width: 399px){
+
+  .logo_title {
+    font-size: 17px;
+  }
+
+  .menu_item {
+    font-size: 21px;
+    margin: 12px;
+  }
+
+  .menu_box {
+    margin: 12px 0 0 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo_item{
+    display: none;
+  }
+
+  .logo_item_mobile{
+    display: block;
+    align-items: center;
+    margin: 30px auto 10px;
+  }
+
+  .info_box{
+    flex-direction: column;
+  }
+
+  .info_img{
+    margin: 0 auto;
+    width: 200px;
+  }
+
+  .text_box {
+    margin: 52px 0 0;
+  } 
+
+  .submit_div {
+    text-align: center;
+  }
+
+  .inner_text{
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .button_to_contact {
+    margin: 20px 0 0 0;
+  }
+
+  .carousel_box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .carousel{
+    width: 350px;
+  }
+
+  .someitem{
+    margin: 79px 0 0 52px;
+    text-align: center;
+    width: 220px;
+  }
+
+  .firstitem{
+    margin: 79px 0 0 72px;
+    text-align: center;
+    width: 200px;
+  }
+
+  .fiveitem{
+    margin: 59px 0 0 72px;
+    text-align: center;
+    width: 200px;
+  }
+
+  .text_about {
+    width: 300px;
+    margin: 20px auto;
+  }
+
+  .input_contact{
+    width: 290px;
+  }
+
+  .adress_row {
+    flex-direction: column;
+  }
+
+  .city, .years, .address {
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .contacts_block {
+    padding: 17px 0 0;
+  }
+
+
 }

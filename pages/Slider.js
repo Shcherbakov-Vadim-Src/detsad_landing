@@ -28,7 +28,7 @@ const Slider = () => {
 
 
     return (
-        <div className={styles.carouselbox}>
+        <div className={styles.carousel_box}>
             <Carousel responsive={responsive}
             className={styles.carousel}
             keyBoardControl={true} >

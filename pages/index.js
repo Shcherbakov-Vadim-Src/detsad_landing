@@ -15,10 +15,13 @@ export default function Home() {
       </Head>
       <main>
           <div className={styles.flex_column}>
-              <div className={styles.logoitem}>
+              <div className={styles.logo_item}>
                 <Image src="/img/logo.png" alt="photo" width="770px" height="190px" />
               </div>
-              <h1 className={styles.logotitle}>🌟 ДЕТСКИЙ САД МЕЧТЫ 🌟</h1>
+              <div className={styles.logo_item_mobile}>
+                <Image src="/img/logo_mobile.png" alt="photo" width="150px" height="150px" />
+              </div>
+              <h1 className={styles.logo_title}>🌟 ДЕТСКИЙ САД МЕЧТЫ 🌟</h1>
               <div className={styles.menu_box}>
                   <a className={styles.menu_item} href="#about">Инфо о нас</a>
                   <a className={styles.menu_item} href="#contact">Контакты</a>
